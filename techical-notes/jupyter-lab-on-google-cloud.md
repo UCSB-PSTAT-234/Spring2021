@@ -20,15 +20,15 @@ In the terminal, copy and execute the following commands:
     ```bash
     sudo apt-get update && \
         sudo apt-get install -y make git docker.io docker-compose && \
-        sudo usermod -aG docker $USER && \ 
+        sudo usermod -aG docker $USER && \
         newgrp docker
     ```
 ## Stage 3: Setup and start Jupyter Lab
 
 * Clone class Github repository
     ```bash
-    git clone https://github.com/UCSB-PSTAT-234/Spring2021
-    cd Spring2021
+    git clone https://github.com/UCSB-PSTAT-234/Spring2021 && \
+        cd Spring2021
     ```
 * One-time initial setup:  
     ```bash  
