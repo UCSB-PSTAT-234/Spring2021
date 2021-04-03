@@ -32,6 +32,11 @@ In the terminal, copy and execute the following commands:
     ```
 ## Stage 3: Setup and start Jupyter Lab
 
+* Clone class Github repository
+    ```bash
+    git clone https://github.com/UCSB-PSTAT-234/Spring2021
+    cd Spring2021
+    ```
 * One-time initial setup:  
     enter a new password for securing your Jupyter lab  
     `make setup`
