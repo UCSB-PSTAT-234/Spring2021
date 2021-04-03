@@ -16,13 +16,6 @@ Click on "SSH" button to start a terminal session
 
 In the terminal, copy and execute the following commands:
 
-* Install Python (Miniconda3)
-    ```bash
-    curl -fSL -o ~/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
-        bash ~/miniconda.sh -b -u -p ~/miniconda3 && \
-        ~/miniconda3/bin/conda init bash && \
-        source ~/.bashrc
-    ```
 * Install dependencies  
     ```bash
     sudo apt-get update && \
@@ -38,8 +31,10 @@ In the terminal, copy and execute the following commands:
     cd Spring2021
     ```
 * One-time initial setup:  
-    enter a new password for securing your Jupyter lab  
-    `make setup`
+    ```bash  
+    make setup
+    ```
+    This will be the password for accessing your Jupyter lab
 * Start/stop Jupyter lab server:
     `make start` and `make stop`
 
