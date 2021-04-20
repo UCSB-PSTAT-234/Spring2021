@@ -18,5 +18,9 @@ RUN pip install \
     pip install jupyter_http_over_ws>=0.0.8 && \
     jupyter serverextension enable --py jupyter_http_over_ws && \
     \
-    pip install jupyterlab_latex==2.0.0 && \
-    jupyter labextension install @jupyterlab/latex
+    pip install \
+        altair==4.1.0 \
+        yfinance==0.1.59 \
+        cvxpy==1.1.12 && \
+    \
+    jupyter lab build
