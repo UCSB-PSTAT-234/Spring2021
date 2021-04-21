@@ -16,11 +16,13 @@ RUN pip install \
         cookiecutter==1.7.2 && \
     \
     pip install jupyter_http_over_ws>=0.0.8 && \
-    jupyter serverextension enable --py jupyter_http_over_ws && \
+    jupyter serverextension enable --sys-prefix jupyter_http_over_ws && \
     \
     pip install \
         altair==4.1.0 \
         yfinance==0.1.59 \
-        cvxpy==1.1.12 && \
-    \
+        cvxpy==1.1.12
+
+RUN pip install nbgitpuller==0.9.0 && \
+    jupyter serverextension enable --sys-prefix nbgitpuller && \
     jupyter lab build
